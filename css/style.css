@@ -1,0 +1,245 @@
+body {
+    margin: 0; 
+    padding: 0; 
+    border: 0; 
+    font-family: "Calibri";
+}
+
+ul {
+    list-style-type: none;
+    padding-left: 0px;
+}
+
+a, a:link, a:active, a:hover, a:visited {
+    text-decoration: none;
+    color: #a09999;
+}
+
+a:hover {
+    color: #bbb3b3;
+}
+
+/* Navigation - header */
+
+.navbar-default {
+    background-color: white;
+    padding: 20px;
+    -moz-box-shadow:    0px 7px 10px #a7a4a4;
+    -webkit-box-shadow: 0px 7px 10px #a7a4a4;
+    box-shadow:         0px 7px 10px #a7a4a4;
+}
+.navbar-header img {
+    max-width: 80%;
+}
+
+.row {
+    margin-top: 30px; 
+}
+
+/* Chat left side*/
+
+.left-side {
+    -moz-box-shadow:    0px 3px 5px #a39e9e;
+    -webkit-box-shadow: 0px 3px 5px #a39e9e;
+    box-shadow:         0px 3px 5px #a39e9e;
+    padding: 0px;
+    height: 800px;
+}
+
+.left-side img {
+    border-radius: 50%;
+    height: 120px;
+    width: 120px;
+    padding: 10px;
+    margin-left: 15px;
+}
+
+.info { 
+    font-style: italic;
+    padding: 10px 40px;
+    color: #255c5e;
+    border-bottom: 3px solid #d1cbcba6;
+}
+
+.info h3 {
+    font-weight: bold;
+}
+
+.profileBox{
+    border-bottom: 3px solid #d1cbcba6;
+}
+
+.profileBox:hover {
+    opacity: 0.8;
+    cursor: pointer;
+}
+
+#john-name, #amy-name, #jack-name  {
+    position: absolute;
+    top: 0px;
+    left: 155px;
+    font-weight: bold;
+    font-size: 20px;
+    color: #255c5e;
+}
+
+#john-status, #amy-status, #jack-status  {
+    color: #a39a9a;
+    font-style: italic;
+    font-size: 17px;
+}
+
+/* Chat right side*/
+
+.right-side {
+    padding: 0;
+    -moz-box-shadow:    0px 3px 4px #a39e9e;
+    -webkit-box-shadow: 0px 3px 4px #a39e9e;
+    box-shadow:         0px 3px 4px #a39e9e;
+    z-index: 2;
+}
+
+#text {
+    height: 740px;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    background-color: #ebebeb;
+}
+
+.send-text {    
+    background-color: #0080c1;
+    height: 60px;
+}
+
+.form-control {
+    border-radius: 7px 0px 0px 7px;
+    margin: 13px 0px 0px 17px;    
+}
+
+.btn-default {
+    border-radius: 0 7px 7px 0;
+    margin: 13px 0 0 -10px;
+    font-weight: bold; 
+    color: #0080c1;
+}
+
+/* Footer */
+
+.footer {
+    background-color: #333232;
+    color: #a09999;
+    clear: both;
+    margin-top: 50px;
+}
+.footer img{
+    padding-bottom: 20px;
+}
+
+.footer .top-row {
+    border-bottom: 1px solid #a1a19f;
+    padding: 10px 0px;
+}
+
+.link-footer {
+    margin-left: 0px;
+    padding: 0px 5px;
+    line-height: 40px;
+    font-size: 16px;
+}
+
+.last-row {
+    font-size: 20px;
+    padding: 0px 5px 20px 5px;
+}
+
+.icons ul li{
+    width: 32px;
+    height: 32px;
+    line-height: 32px;
+    text-align: center;
+    cursor: pointer;
+    border: 1px solid #b8b5b5;
+    border-radius: 50%;
+    float: left;
+    margin-right: 30px;
+    transition-property: background;
+    transition-duration: 0.4s;
+    transition-timing-function: linear;
+    
+}
+
+.icons  ul li:hover {
+    background-color: #ebebeb;
+    -webkit-transition: background-color 0.6s ease-in-out;
+	-moz-transition: background-color 0.6s ease-in-out;
+	-ms-transition: background-color 0.6s ease-in-out;
+	-o-transition: background-color 0.6s ease-in-out;
+    transition: background-color 0.6s ease-in-out;
+}
+/* Messages - chat elements */
+
+.chatBubble {
+    padding: 5px 25px;
+    height: 53px;
+    display: inline-block;
+    clear: both;
+    border-radius: 12px;
+    color: white;
+    position: relative;
+}
+
+.received {
+    float: left;
+    text-align: right;
+    background: #9ac4e9;
+    margin-left: 100px;
+    margin-top:20px;
+}
+
+.received:after {
+    transform: rotate(-20deg);
+    content: '';
+	position: absolute;
+	left: 0;
+	top: 40%;
+	width: 0;
+	height: 0;
+	border: 30px solid transparent;
+    border-right-color: #9ac4e9;
+	border-left: 0;
+	border-bottom: 0;
+	margin: 9px 0px 0px -15px;
+}
+
+.received p {
+    margin-bottom: 0px;
+}
+
+.sent {
+    float: right;
+    text-align: left;
+    background: #0981bd;
+    margin: 20px 100px 10px 0px;    
+}
+
+.sent:after {
+    transform: rotate(30deg);
+    content: '';
+	position: absolute;
+	right: 0;
+	top: 52%;
+	border: 30px solid transparent;
+	border-left-color: #0981bd;
+	border-right: 0;
+	border-bottom: 0;
+    margin-right: -13px;
+}
+
+.sent p {
+    margin-bottom: 0px;
+}
+
+.change-background {
+    background-color: #ebebeb;
+    border-bottom: 3px solid #5599ff9f;
+}
