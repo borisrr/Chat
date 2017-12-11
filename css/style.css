@@ -205,10 +205,10 @@ a:hover {
 	width: 0;
 	height: 0;
 	border: 25px solid transparent;
-    border-right-color: #9ac4e9;
+        border-right-color: #9ac4e9;
 	border-left: 0;
 	border-bottom: 0;
-	margin: 7px 0px 0px -15px;
+	margin: 6px 0px 0px -15px;
 }
 
 .received p {
@@ -232,7 +232,7 @@ a:hover {
 	border-left-color: #0981bd;
 	border-right: 0;
 	border-bottom: 0;
-    margin-right: -13px;
+        margin-right: -13px;
 }
 
 .sent p {
